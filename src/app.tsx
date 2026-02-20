@@ -18,6 +18,7 @@ import {
 } from "lucide-react";
 import { ThemeProvider } from "@/components/theme-provider";
 import { ModeToggle } from "@/components/mode-toggle";
+import { TooltipProvider } from "@/components/ui/tooltip";
 import {
   Tool,
   ToolHeader,
@@ -415,6 +416,7 @@ function Chat() {
 export default function App() {
   return (
     <ThemeProvider defaultTheme="system" storageKey="vite-ui-theme">
+      <TooltipProvider>
       <Toaster />
       <Suspense
         fallback={
@@ -425,6 +427,7 @@ export default function App() {
       >
         <Chat />
       </Suspense>
+      </TooltipProvider>
     </ThemeProvider>
   );
 }
