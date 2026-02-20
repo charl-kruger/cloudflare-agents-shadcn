@@ -148,3 +148,10 @@ dist
 !.env.example
 
 .examples/
+
+# Editor/tooling
+.agent/
+.agents/
+.claude/
+.cursor/
+pnpm-lock.yaml
