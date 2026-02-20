@@ -2,7 +2,7 @@
 
 ![npm i agents command](./npm-agents-banner.svg)
 
-<a href="https://deploy.workers.cloudflare.com/?url=https://github.com/cloudflare/agents-starter"><img src="https://deploy.workers.cloudflare.com/button" alt="Deploy to Cloudflare"/></a>
+<a href="https://deploy.workers.cloudflare.com/?url=https://github.com/charl-kruger/cloudflare-agents-shadcn"><img src="https://deploy.workers.cloudflare.com/button" alt="Deploy to Cloudflare"/></a>
 
 A starter template for building AI chat agents on Cloudflare, powered by the [Agents SDK](https://developers.cloudflare.com/agents/).
 
@@ -11,7 +11,7 @@ Uses Workers AI (no API key required), with tools for weather, timezone detectio
 ## Quick start
 
 ```bash
-npx create-cloudflare@latest --template cloudflare/agents-starter
+npx create-cloudflare@latest --template charl-kruger/cloudflare-agents-shadcn
 cd agents-starter
 npm install
 npm run dev
@@ -31,9 +31,9 @@ Try these prompts to see the different features:
 ```
 src/
   server.ts    # Chat agent with tools and scheduling
-  app.tsx      # Chat UI built with Kumo components
+  app.tsx      # Chat UI built with shadcn/ui and AI Elements
   client.tsx   # React entry point
-  styles.css   # Tailwind + Kumo styles
+  index.css    # Tailwind + shadcn theme
 ```
 
 ## What's included
@@ -43,7 +43,7 @@ src/
 - **Scheduling** — one-time, delayed, and recurring (cron) tasks
 - **Reasoning display** — shows model thinking as it streams, collapses when done
 - **Debug mode** — toggle in the header to inspect raw message JSON for each message
-- **Kumo UI** — Cloudflare's design system with dark/light mode
+- **shadcn/ui + AI Elements** — Tailwind-based component library with purpose-built AI UI primitives and dark/light mode
 - **Real-time** — WebSocket connection with automatic reconnection and message persistence
 
 ## Making it your own

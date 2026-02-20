@@ -14,6 +14,8 @@ import {
 import { z } from "zod";
 
 export class ChatAgent extends AIChatAgent<Env> {
+  maxPersistedMessages = 100;
+
   async onChatMessage(
     onFinish: StreamTextOnFinishCallback<ToolSet>,
     options?: { abortSignal?: AbortSignal }
